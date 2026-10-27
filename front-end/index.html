@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioglow - Monitoramento Simulado</title>
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Painel da Colmeia</h1>
+    <nav class="topbar-nav" aria-label="Navegação principal">
+      <a class="nav-link" href="./projeto.html">Sobre o projeto</a>
+      <a class="nav-link" href="./index.html" aria-current="page">Dashboard</a>
+      <a class="nav-link" href="./equipe.html">Sobre a equipe</a>
+    </nav>
+  </header>
+
+  <main class="dashboard" id="painel">
+    <section class="cards" aria-label="Métricas da colmeia">
+      <article class="card">
+        <span class="card-bee" aria-hidden="true">🐝</span>
+        <h2 class="card-title">Temperatura</h2>
+        <p class="card-value"><strong id="temp">-- °C</strong></p>
+      </article>
+      <article class="card">
+        <span class="card-bee" aria-hidden="true">🐝</span>
+        <h2 class="card-title">Umidade</h2>
+        <p class="card-value"><strong id="umidade">-- %</strong></p>
+      </article>
+      <article class="card">
+        <span class="card-bee" aria-hidden="true">🐝</span>
+        <h2 class="card-title">Peso</h2>
+        <p class="card-value"><strong id="peso">-- kg</strong></p>
+      </article>
+    </section>
+
+    <section class="camera" aria-label="Câmera da colmeia">
+      <img src="./img/frente-colmeia.jpeg" alt="Vista frontal da colmeia">
+    </section>
+  </main>
+
+  <footer class="footer" aria-hidden="true"></footer>
+  <script src="app.js"></script>
+</body>
+</html>
